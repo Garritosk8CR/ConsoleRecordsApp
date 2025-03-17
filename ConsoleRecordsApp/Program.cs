@@ -15,6 +15,7 @@
 
         Print($" record type :  {r1a}");
 
+        Print($" are equal:  {Equals(r1a, r1b)}" );
     }
 
     public record Record1 (string FirstName, string LastName);
