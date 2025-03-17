@@ -9,6 +9,12 @@
             Print(GetFizzBuzz(number));
         }
 
+        Record1 r1a = new Record1("John", "Doe");
+
+        Record1 r1b = new Record1("John", "Doe");
+
+        Print($" record type :  {r1a}");
+
     }
 
     public record Record1 (string FirstName, string LastName);
