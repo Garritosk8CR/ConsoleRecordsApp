@@ -17,42 +17,20 @@
 
         Print($" are equal:  {Equals(r1a, r1b)}" );
 
-        Print(isPalindrome("madam") ? "Palindrome" : "Not Palindrome");
+        Print(IsPalindrome("madam") ? "Palindrome" : "Not Palindrome");
     }
 
     public record Record1 (string FirstName, string LastName);
 
-
-
-
-
-
-
-
-    public static Boolean isPalindrome(string str)
+    public static Boolean IsPalindrome(string str)
     {
         int half = str.Length / 2;
         for (int i = 0; i < half; i++)
-            if (str[i] != str[str.Length - i - 1])
+            if (str[i] != str[str.Length - 1 - i])
                 return false;
         return true;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public static string GetFizzBuzz(int number)
     {
