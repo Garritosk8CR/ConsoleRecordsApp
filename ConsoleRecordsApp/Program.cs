@@ -16,6 +16,8 @@
         Print($" record type :  {r1a}");
 
         Print($" are equal:  {Equals(r1a, r1b)}" );
+
+        Print(isPalindrome("madam") ? "Palindrome" : "Not Palindrome");
     }
 
     public record Record1 (string FirstName, string LastName);
@@ -27,6 +29,15 @@
 
 
 
+    public static Boolean isPalindrome(string str)
+    {
+        int half = str.Length / 2;
+        for (int i = 0; i < half; i++)
+            if (str[i] != str[str.Length - i - 1])
+                return false;
+        return true;
+
+    }
 
 
 
